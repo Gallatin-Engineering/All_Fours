@@ -38,7 +38,8 @@
                         <a href="#"><button class="navbutton" onclick="toggle('myChat')"><i class="material-icons">question_answer</i><br>Chat</button></a>
                         <a href="pages/about.html"><button class="navbutton"><br>About</button></a>
                         <a href="pages/documentation.html"><button class="navbutton"><br>Documentation</button></a>
-                        <a href="pages/license.html"><button class="navbutton"><i class='far fa-id-card'></i><br>License</button></a>                        <a href="#" id="togglePanel" onclick="toggle('controlPanel')"><button class="navbutton"><br>Control Panel (toggle)</button></a>
+                        <a href="pages/license.html"><button class="navbutton"><i class='far fa-id-card'></i><br>License</button></a>                        
+                        <a href="#" id="togglePanel" onclick="toggle('controlPanel')"><button class="navbutton"><br>Control Panel (toggle)</button></a>
                         <!-- <i class='fas fa-toggle-off' style='font-size:48px;color:rgb(255, 255, 255)'></i><i style='font-size:24px' class='fas'>&#xf205;</i> -->
                     </nav> 
                 </div>
@@ -50,33 +51,33 @@
         <div  id="ticker"></div>
     <!--    HOMESCREEN      -->   
         <div class="modal gMenu" id="home_screen" style="display: none;"> 
-                <span title="Close Title Screen" class="close" onclick="document.getElementById('home_screen').style.display='none'">×</span>
-              <div class="animate content">
-                <!-- <form class="modal-content animate" method="POST"> -->
-                 <!-- <input name="csrfmiddlewaretoken" type="hidden" value="p1aA4U01fPND1PLlKb5uLkdx1CkiLMvsv9mIs31qDYLI1uZsHzIN0S9BuDzbTkDa"> -->
-                  <div class="imgcontainer">
-                    <!--    Game Logo Here -->
-                    <!-- <H4>TWO-MAN ALL FOURS</H4> -->
-                  </div>
-              
-                  <div class="btn menuContainer">            
-                    <button type="submit" class="disabled menuButtons" id="button_1" onmousedown="pressBtn('button_1')">Play Game</button>
-                    <button type="submit" class="menuButtons" id="button_2"  onmousedown="pressBtn('button_2')" >Settings</button>
-                    <button type="submit" class="menuButtons" id="button_3" onmousedown="pressBtn('button_3')">Login</button>
-                    <button id="button_4" class="menuButtons" onmousedown="pressBtn('button_4')">Quit</button>
-                  </div>
-                  <div class="container" id="progress_section">
-                  <p id="loading">Loading...</p>
-                    <div id="progress">
-                      <div id="progress-bar">1%</div>
-                    </div>
-                   <!-- <button class="cancelbtn" onclick="document.getElementById('home_screen').style.display='none'" type="button">Cancel</button> -->
-                    <!--    Home Icon & Settings Icon (bottom left corner)      -->
-                  </div>
-        
-                  <div class="copy"><p class="copyright">Copyright &copy; 2018 - 2019. Roger Clarke. All rights reserved. </p></div>
-                </div>  <!-- </form> -->
-            </div> <!-- end of home_screen  --> 
+          <span title="Close Title Screen" class="close" onclick="document.getElementById('home_screen').style.display='none'">×</span>
+            <div class="animate content home_screen_content_div ">
+              <!-- <form class="modal-content animate" method="POST"> -->
+              <!-- <input name="csrfmiddlewaretoken" type="hidden" value="p1aA4U01fPND1PLlKb5uLkdx1CkiLMvsv9mIs31qDYLI1uZsHzIN0S9BuDzbTkDa"> -->
+              <div class="imgcontainer">
+              <!--    Game Logo Here -->
+              <!-- <H4>TWO-MAN ALL FOURS</H4> -->
+              </div>
+          
+              <div class="btn menuContainer">            
+                <button type="submit" class="disabled menuButtons" id="button_1" onmousedown="pressBtn('button_1')">Play Game</button>
+                <button type="submit" class="menuButtons" id="button_2"  onmousedown="pressBtn('button_2')" >Settings</button>
+                <button type="submit" class="menuButtons" id="button_3" onmousedown="pressBtn('button_3')">Login</button>
+                <button id="button_4" class="menuButtons" onmousedown="pressBtn('button_4')">Quit</button>
+              </div>
+              <div class="container" id="progress_section">
+                <p id="loading">Loading...</p>
+                <div id="progress">
+                    <div id="progress-bar">1%</div>
+                </div>
+                <!-- <button class="cancelbtn" onclick="document.getElementById('home_screen').style.display='none'" type="button">Cancel</button> -->
+                <!--    Home Icon & Settings Icon (bottom left corner)      -->
+              </div>
+  
+              <div class="copy"><p class="copyright">Copyright &copy; 2018 - 2019. Roger Clarke. All rights reserved. </p></div>
+            </div>  <!-- </form> -->
+        </div> <!-- end of home_screen  --> 
 
     <!--    MENUSCREEN      -->   
         <div class="modal gMenu" id="menu_screen" style="display: none;"> 
@@ -139,8 +140,9 @@
 <!--        Home/Title Screen   -->
 
 <!--        Chat Box            -->
-<!-- <button class="open-button" onclick="openForm()">Chat</button> -->
+    <!-- <script src="./scripts/chat.js"> -->
 <section id="chat_box">
+
     <!-- <button class="chat-minimize btn">Hide Chat</button>  -->
     <button type="button" class="chat-minimize btn" id="openChatBtn" onclick="showChatWindow()">Open Chat <i class="far fa-comments"></i></button>
     
@@ -160,25 +162,6 @@
         </div>
     </div>
 
-    <!--        chat script     -->
-    <!-- <script src="./scripts/chat.js"> -->
-        
-    <!-- <script>        
-        $(function () {
-            var socket = io();
-            $('#sendBtn').onclick(function(){
-                socket.emit('chat message', $('#msg').val());
-                $('#msg').val('');
-                return false;
-            });
-            socket.on('chat message', function(msg){
-                $('#chat-messages').append($('<li>').text(msg));
-                window.scrollTo(0, document.body.scrollHeight);
-            });
-
-        });
-
-    </script> -->
 </section>  <!--        End of Chat Box section        -->
 
     <!-- Footer -->
@@ -213,7 +196,7 @@
     *   @PROJECT NAME:  "KAITY"
     *   @MODULE:    CHAT MODULE
     *   @TITLE:     OLE TALK
-    *   @VERSION:   1.1.1
+    *   @VERSION:   1.2.0
     *   This commit fixes some of the known bugs in the Chat Module. 
  -->
 </html>
@@ -234,7 +217,7 @@
 
 
 /********************************************************************************************** */
-/*                 Copyright (c) 2018-2020 Gallatin Engineering Ltd. All Rights Reserved        */
+/*                 Copyright (c) 2018-2025 Gallatin Engineering Ltd. All Rights Reserved        */
 /********************************************************************************************** */
 
 -->

@@ -68,11 +68,14 @@
   right: 25px;
   z-index: 10;
 }
-
-#chat-window {
-  border: 2px solid #f1f1f1;
-  width: 100%;
+#myChat {
   background-color: #d4d4d4;
+  padding: 0;
+
+}
+#chat-window {
+  /* border: 2px solid #f1f1f1; */
+  width: 100%;
   color: black;
   height: 200px;
   font-size: 10px;
@@ -109,8 +112,8 @@
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
-  /* padding: 10px; */
-  background-color: white;
+  padding: 10px;
+  /* background-color: white; */
 }
 
 /* Full-width textarea */
@@ -118,15 +121,22 @@
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+  border: 0.5px solid rgb(150, 150, 150);
+  border-radius: 10px;
+  background: #dfdfdf;
   resize: none;
   height: 65px;
 }
 
+.form-container .inputMessage:hover {
+  border: 1px solid black;
+  background-color: #dfdfdf;
+
+}
+
 /* When the textarea gets focus, do something */
 .form-container inputMessage:focus {
-  background-color: #d4d4d4;
+  background-color: #ffffff;
   outline: none;
 }
 
@@ -151,6 +161,7 @@
 }
 .send {
   background-color: rgb(5, 158, 5);
+  border: ;
 }
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {

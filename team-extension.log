@@ -394,3 +394,135 @@
 2020-05-28T13:50:54.767Z - info:   [13724] AzureReposVSCode/1.161.0 (VSCode 1.45.1; Windows_NT 10.0.18362; Node 12.8.1)
 2020-05-28T13:50:54.826Z - warn:   [13724] TFVC Couldn't find where the TF command lives on disk.
 2020-05-28T13:50:54.826Z - error:  [13724] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-20T16:15:24.124Z - info:   [06896] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-20T16:15:24.125Z - info:   [06896] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-20T16:15:24.186Z - warn:   [06896] TFVC Couldn't find where the TF command lives on disk.
+2020-06-20T16:15:24.187Z - error:  [06896] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-22T01:02:41.869Z - info:   [06896] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-22T01:02:41.870Z - info:   [06896] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-22T01:02:41.983Z - warn:   [06896] TFVC Couldn't find where the TF command lives on disk.
+2020-06-22T01:02:41.984Z - error:  [06896] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-22T19:07:09.515Z - info:   [19120] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-22T19:07:09.522Z - info:   [19120] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-22T19:07:09.619Z - warn:   [19120] TFVC Couldn't find where the TF command lives on disk.
+2020-06-22T19:07:09.620Z - error:  [19120] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-22T20:42:29.857Z - info:   [19120] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-22T20:42:29.858Z - info:   [19120] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-22T20:42:29.922Z - warn:   [19120] TFVC Couldn't find where the TF command lives on disk.
+2020-06-22T20:42:29.923Z - error:  [19120] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-22T20:42:32.803Z - info:   [19120] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-22T20:42:32.803Z - info:   [19120] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-22T20:42:32.814Z - warn:   [19120] TFVC Couldn't find where the TF command lives on disk.
+2020-06-22T20:42:32.814Z - error:  [19120] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-22T20:43:25.189Z - info:   [19120] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-22T20:43:25.189Z - info:   [19120] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-22T20:43:25.201Z - warn:   [19120] TFVC Couldn't find where the TF command lives on disk.
+2020-06-22T20:43:25.201Z - error:  [19120] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-22T21:08:38.605Z - info:   [19120] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-22T21:08:38.605Z - info:   [19120] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-22T21:08:38.626Z - warn:   [19120] TFVC Couldn't find where the TF command lives on disk.
+2020-06-22T21:08:38.627Z - error:  [19120] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-22T22:19:47.206Z - info:   [19120] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-22T22:19:47.207Z - info:   [19120] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-22T22:19:47.222Z - warn:   [19120] TFVC Couldn't find where the TF command lives on disk.
+2020-06-22T22:19:47.223Z - error:  [19120] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-25T01:47:17.916Z - info:   [23052] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-25T01:47:17.918Z - info:   [23052] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-25T01:47:17.976Z - warn:   [23052] TFVC Couldn't find where the TF command lives on disk.
+2020-06-25T01:47:17.977Z - error:  [23052] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-27T01:03:19.633Z - info:   [23052] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-27T01:03:19.638Z - info:   [23052] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-27T01:03:19.817Z - warn:   [23052] TFVC Couldn't find where the TF command lives on disk.
+2020-06-27T01:03:19.817Z - error:  [23052] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-27T01:03:20.460Z - info:   [23052] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-27T01:03:20.461Z - info:   [23052] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-27T01:03:20.482Z - warn:   [23052] TFVC Couldn't find where the TF command lives on disk.
+2020-06-27T01:03:20.482Z - error:  [23052] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-30T09:00:00.277Z - info:   [16288] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-30T09:00:00.279Z - info:   [16288] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-30T09:00:00.335Z - warn:   [16288] TFVC Couldn't find where the TF command lives on disk.
+2020-06-30T09:00:00.336Z - error:  [16288] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-06-30T16:46:02.310Z - info:   [23420] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-06-30T16:46:02.311Z - info:   [23420] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-30T16:46:02.374Z - warn:   [23420] TFVC Couldn't find where the TF command lives on disk.
+2020-06-30T16:46:02.375Z - error:  [23420] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-07-01T06:27:58.947Z - info:   [23420] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-07-01T06:27:58.948Z - info:   [23420] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-07-01T06:27:58.999Z - warn:   [23420] TFVC Couldn't find where the TF command lives on disk.
+2020-07-01T06:27:58.999Z - error:  [23420] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-07-18T18:22:39.461Z - info:   [12396] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-07-18T18:22:39.462Z - info:   [12396] AzureReposVSCode/1.161.0 (VSCode 1.47.2; Windows_NT 10.0.18362; Node 12.8.1)
+2020-07-18T18:22:39.491Z - warn:   [12396] TFVC Couldn't find where the TF command lives on disk.
+2020-07-18T18:22:39.491Z - error:  [12396] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-07-20T12:28:40.328Z - info:   [12396] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-07-20T12:28:40.329Z - info:   [12396] AzureReposVSCode/1.161.0 (VSCode 1.47.2; Windows_NT 10.0.18362; Node 12.8.1)
+2020-07-20T12:28:40.422Z - warn:   [12396] TFVC Couldn't find where the TF command lives on disk.
+2020-07-20T12:28:40.423Z - error:  [12396] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-07-21T16:34:49.297Z - info:   [12396] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-07-21T16:34:49.298Z - info:   [12396] AzureReposVSCode/1.161.0 (VSCode 1.47.2; Windows_NT 10.0.18362; Node 12.8.1)
+2020-07-21T16:34:49.347Z - info:   [12396] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-07-21T16:34:49.347Z - info:   [12396] AzureReposVSCode/1.161.0 (VSCode 1.47.2; Windows_NT 10.0.18362; Node 12.8.1)
+2020-07-21T16:34:49.411Z - warn:   [12396] TFVC Couldn't find where the TF command lives on disk.
+2020-07-21T16:34:49.412Z - warn:   [12396] TFVC Couldn't find where the TF command lives on disk.
+2020-07-21T16:34:49.412Z - error:  [12396] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-07-21T16:34:49.412Z - error:  [12396] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-07-22T22:36:23.300Z - info:   [12396] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-07-22T22:36:23.301Z - info:   [12396] AzureReposVSCode/1.161.0 (VSCode 1.47.2; Windows_NT 10.0.18362; Node 12.8.1)
+2020-07-22T22:36:23.381Z - warn:   [12396] TFVC Couldn't find where the TF command lives on disk.
+2020-07-22T22:36:23.382Z - error:  [12396] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-07-23T23:40:43.130Z - info:   [37260] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-07-23T23:40:43.132Z - info:   [37260] AzureReposVSCode/1.161.0 (VSCode 1.47.2; Windows_NT 10.0.18362; Node 12.8.1)
+2020-07-23T23:40:43.187Z - warn:   [37260] TFVC Couldn't find where the TF command lives on disk.
+2020-07-23T23:40:43.188Z - error:  [37260] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-01T04:33:12.482Z - info:   [0940] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-01T04:33:12.483Z - info:   [0940] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-01T04:33:12.543Z - warn:   [0940] TFVC Couldn't find where the TF command lives on disk.
+2020-08-01T04:33:12.544Z - error:  [0940] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-02T09:52:38.054Z - info:   [13108] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-02T09:52:38.056Z - info:   [13108] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-02T09:52:38.119Z - warn:   [13108] TFVC Couldn't find where the TF command lives on disk.
+2020-08-02T09:52:38.120Z - error:  [13108] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-02T22:34:43.475Z - info:   [13108] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-02T22:34:43.476Z - info:   [13108] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-02T22:34:43.536Z - warn:   [13108] TFVC Couldn't find where the TF command lives on disk.
+2020-08-02T22:34:43.536Z - error:  [13108] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-03T05:54:10.016Z - info:   [13108] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-03T05:54:10.017Z - info:   [13108] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-03T05:54:10.077Z - warn:   [13108] TFVC Couldn't find where the TF command lives on disk.
+2020-08-03T05:54:10.077Z - error:  [13108] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-03T07:13:41.786Z - info:   [13108] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-03T07:13:41.787Z - info:   [13108] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-03T07:13:41.818Z - warn:   [13108] TFVC Couldn't find where the TF command lives on disk.
+2020-08-03T07:13:41.818Z - error:  [13108] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-04T19:14:26.544Z - info:   [77760] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-04T19:14:26.545Z - info:   [77760] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-04T19:14:26.613Z - warn:   [77760] TFVC Couldn't find where the TF command lives on disk.
+2020-08-04T19:14:26.614Z - error:  [77760] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-12T16:06:03.960Z - info:   [48928] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-12T16:06:03.962Z - info:   [48928] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-12T16:06:04.035Z - warn:   [48928] TFVC Couldn't find where the TF command lives on disk.
+2020-08-12T16:06:04.036Z - error:  [48928] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-13T00:42:21.635Z - info:   [49688] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-13T00:42:21.636Z - info:   [49688] AzureReposVSCode/1.161.0 (VSCode 1.47.3; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-13T00:42:21.709Z - warn:   [49688] TFVC Couldn't find where the TF command lives on disk.
+2020-08-13T00:42:21.710Z - error:  [49688] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-14T06:03:59.539Z - info:   [08556] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-14T06:03:59.540Z - info:   [08556] AzureReposVSCode/1.161.0 (VSCode 1.48.0; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-14T06:03:59.591Z - warn:   [08556] TFVC Couldn't find where the TF command lives on disk.
+2020-08-14T06:03:59.592Z - error:  [08556] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-14T13:20:37.277Z - info:   [08556] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-14T13:20:37.279Z - info:   [08556] AzureReposVSCode/1.161.0 (VSCode 1.48.0; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-14T13:20:37.362Z - warn:   [08556] TFVC Couldn't find where the TF command lives on disk.
+2020-08-14T13:20:37.363Z - error:  [08556] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-17T07:36:36.509Z - info:   [08556] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-17T07:36:36.511Z - info:   [08556] AzureReposVSCode/1.161.0 (VSCode 1.48.0; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-17T07:36:36.621Z - warn:   [08556] TFVC Couldn't find where the TF command lives on disk.
+2020-08-17T07:36:36.622Z - error:  [08556] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-17T07:36:40.624Z - info:   [08556] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-17T07:36:40.625Z - info:   [08556] AzureReposVSCode/1.161.0 (VSCode 1.48.0; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-17T07:36:40.707Z - warn:   [08556] TFVC Couldn't find where the TF command lives on disk.
+2020-08-17T07:36:40.708Z - error:  [08556] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.
+2020-08-17T21:01:26.964Z - info:   [08556] *** FOLDER: c:\Users\roger\Documents\Personal\dev\AllFours\All_Fours ***
+2020-08-17T21:01:26.966Z - info:   [08556] AzureReposVSCode/1.161.0 (VSCode 1.48.0; Windows_NT 10.0.18362; Node 12.8.1)
+2020-08-17T21:01:27.091Z - warn:   [08556] TFVC Couldn't find where the TF command lives on disk.
+2020-08-17T21:01:27.092Z - error:  [08556] The path to the TFVC command line (including filename) was not found in the user settings. Please set this value (tfvc.location) and try again.

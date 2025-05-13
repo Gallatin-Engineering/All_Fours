@@ -7,19 +7,19 @@
 */
 
 /**
- *  @copyright (c) 2018-2020 Gallatin Engineering Ltd. All rights reserved.
+ *  @copyright (c) 2018-2025 Gallatin Engineering Ltd. All rights reserved.
  *  @publisher Gallatin Engineering Ltd
  *  @programmer Roger Clarke (muddiman | .muddicode)
  *  @link      https://www.twomanallfours.com |   https://www.gallatinengineering.com/pages/twomanallfours.html
  *  @email     support@gallatinengineering.com    |   support@twomanallfours.com  
- *  @version   0.9.2 (RC2: Release Candidate #2)
+ *  @version   0.9.4 (RC2: Release Candidate #4)
  *  @since     2018-10-1
  *  @download  https://www.github.com/muddiman/All_Fours
  *  @license   Exclusive commercial license.
  *  @See:      http://www.twomanallfours.com/license.html
  *             Free to use and/or distribute for personal or academic purposes ONLY.
  *             Must site the source code using the following format at beginning or end of source code file where it was used:
- *             "Clarke, Roger A. (2018) All Fours Game (ver. 0.9.2) [Source Code]. New York, 
+ *             "Clarke, Roger A. (2018) All Fours Game (ver. 0.9.4) [Source Code]. New York, 
  *             NY. http://www.twomanallfours.com, https://www.github.com/gallatinengineering". 
  */
 
@@ -83,6 +83,10 @@
 
 /***************************************     the globals *  ********************************************************/
 
+
+// CONSTANTS & FLAGS
+
+
 /*  boolean settings    */
 const ON=true;
 const OFF=false;
@@ -94,8 +98,8 @@ const ADS=ON;
 const MAGNIFY_CARD=ON;   //  SETTINGS.MOUSE_OVER;
 
 /* necessary game dimensions */
-const WIDTH   = 700; //use window.innerWidth;  for fullscreen gaming
-const HEIGHT  = 450; //use window.innerHeight; for fullscreen gaming
+const WIDTH   = 750; //use window.innerWidth;  for fullscreen gaming
+const HEIGHT  = 500; //use window.innerHeight; for fullscreen gaming
 const CARD_W  =  72; // card width
 const CARD_H  =  96; // card height
 
@@ -119,8 +123,8 @@ const MAX_CHARACTERS=10;
 
 /* Canvas top-left corner coords (in px) */
 const LEFTOFFSET =  15;
-const TOPOFFSET  = 180;
-const MARGIN=5;
+const TOPOFFSET  = 210;
+const MARGIN=35;
 const USERHAND_Y=340;
 
 
@@ -133,10 +137,10 @@ const displayArr=["desktop", "tablet", "mobile"];
 const playerArr=["TWO_PLAYER", "FOUR_PLAYER"];
 const difficultyArr=["EASY", "HARD", "PRO"];
 /*  Display Settings    */
-const scoreboardWIDTH=260;
-const scoreboardHEIGHT=120;
-const defaultWIDTH=700;
-const defaultHEIGHT=450;
+const scoreboardWIDTH=220;
+const scoreboardHEIGHT=100;
+const defaultWIDTH=750;
+const defaultHEIGHT=500;
 
 /*  Sound  */
 var sndFx = [];             //  load sound effects into array
@@ -298,7 +302,7 @@ function gCanvasLayer(ID, zIndex, color) {
         this.ctx = this.canvas.getContext('2d');
         document.getElementById("game_container").appendChild(this.canvas);
         document.getElementById(ID).style = `position: absolute; left: ${this.xOffset}px; top: ${this.yOffset}px; z-index: ${this.z}; background-color: ${this.color};`;
-        console.log(`New ${this.canvas.id} canvas initialized.`);
+        console.log(`New ${this.canvas.id} canvas initialized with ${this.xOffset}px and ${this.yOffset}px x-y offsets.`);
         return this;
     };
 }
@@ -309,7 +313,7 @@ gCanvasLayer.prototype.getScale = function () {
                                     return this.scale;
                                 };
 gCanvasLayer.prototype.xOffset  = LEFTOFFSET;  //  Math.floor(this.scale * LEFTOFFSET);
-gCanvasLayer.prototype.yOffset  = TOPOFFSET;  //    Math.floor(this.scale * TOPOFFSET);
+gCanvasLayer.prototype.yOffset  = TOPOFFSET;  // Math.floor(this.scale * TOPOFFSET);
 //  universal methods
 gCanvasLayer.prototype.clear    = function () {
                                     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
@@ -356,14 +360,16 @@ gCanvasLayer.prototype.shadow = function (color, xOffset, yOffset, blur) {
                                 }; 
 
 function setScale(deviceWidth, deviceHeight) {
-    let scale = 1;
-    if (deviceWidth <= defaultWIDTH + MARGIN || deviceHeight <= defaultHEIGHT + MARGIN) {
-        if (deviceWidth <= deviceHeight) {
-            scale = deviceWidth /  (defaultWIDTH + MARGIN);
-        } else { 
-            scale = deviceHeight / (defaultHEIGHT + MARGIN);
-        }        
+    let scale = 1.0;
+    if (deviceWidth > defaultWIDTH + MARGIN && deviceHeight > defaultHEIGHT + MARGIN) {
+        console.log(`Screen Scale = ${scale}.`);
+        return scale;
     }
+    if (deviceWidth <= deviceHeight) {
+        scale = deviceWidth /  (defaultWIDTH + MARGIN);
+    } else { 
+        scale = deviceHeight / (defaultHEIGHT + MARGIN);
+    }        
     console.log(`Screen Scale = ${scale}.`);
     return scale;
 }
@@ -375,7 +381,7 @@ function setScale(deviceWidth, deviceHeight) {
 console.log(`Reading the 'Display' script`);
 
 var Display = {
-    onBackground:          new gCanvasLayer("game_board",    0, "rgba( 68, 102, 210, 1.0)"),
+    onBackground:          new gCanvasLayer("game_board",    0, `rgba( 68, 101, 210, 0.9)`),
     onCardScreen:          new gCanvasLayer("card_layer",    1, `rgba(  0,   0,   0, 0.0)`),
     onMsgScreen:           new gCanvasLayer("msg_layer",     2, `rgba(255, 255, 255, 0.0)`),
     onMenuScreen:          new gCanvasLayer("menu_layer",    3, `rgba(204, 204, 204, 0.8)`),
@@ -386,14 +392,23 @@ var Display = {
                     this.onMsgScreen.init();
                     this.onMenuScreen.init();
                     this.onVideoScreen.init();
-                    // this.onMsgScreen.canvas.style.visibility = "hidden";     
+                    // this.onMsgScreen.canvas.style.visibility = "hidden";
+                    // this.insertBackgroundImage();     
                     this.onVideoScreen.canvas.style.visibility = "hidden";     
                     return this;
                 },
 /*  methods  */
+    table: function (table_top) {
+                    const x = 0;
+                    const y = 0;
+                    // const table_width = this.onBackground.width;
+                    // const table_height = this.onBackground.height;
+                    this.onBackground.placeImage(table_top, x, y, this.onBackground.width, this.onBackground.height); 
+                    return this;                   
+                },
     labels:     function (hand) {
                     let fontSize = Math.floor(this.onBackground.scale * 15);    
-                    this.onBackground.setFont(`bold ${fontSize}px Arial`).text("TRUMP", "rgba(254,254,254,1.0)", 15, 30 + CARD_H); 
+                    this.onBackground.setFont(`bold ${fontSize}px Arial`).text("TRUMP", "rgba(254,254,254,1.0)", 40, 50 + CARD_H); 
                     for (let index = 0; index < hand.length; index++) {
                         this.onBackground.text(index + 1, "rgba(254,254,254,1.0)", cardLocation(index, hand.length)  + CARD_W / 4, HEIGHT - 2);
                     }
@@ -406,12 +421,12 @@ var Display = {
                     const upperLeftCornerY = MARGIN;
                     this.onBackground.drawRectangle("black", 4, upperLeftCornerX, upperLeftCornerY, scoreboardWIDTH, scoreboardHEIGHT, "#663300")
                         .shadow("black", 10, 10, 40);
-                    let fontSize = Math.floor(this.onBackground.scale * 30);    
+                    let fontSize = Math.floor(this.onBackground.scale * 20);    
                     this.onBackground.setFont(`bold ${fontSize}px Arial`)
-                        .text(players.computer.name,  "#ffffff", upperLeftCornerX + 15, 40, false)
+                        .text(players.computer.name,  "#ffffff", upperLeftCornerX + 15, 60, false)
                         .text(players.human.name,     "#ffffff", upperLeftCornerX + 15, 105, false)
-                        .text(players.computer.score, "#ffffff", upperLeftCornerX + 215, 40, false)               
-                        .text(players.human.score,    "#ffffff", upperLeftCornerX + 215, 105, false);               
+                        .text(players.computer.score, "#ffffff", upperLeftCornerX + 190, 60, false)               
+                        .text(players.human.score,    "#ffffff", upperLeftCornerX + 190, 105, false);               
                     return this;
                 }, 
     adbox:      function (adImage) {
@@ -1608,6 +1623,7 @@ Game.Components = {
 
 Game.Background = {
     display     : {},       //  new gCanvasLayer("gameboard", WIDTH, HEIGHT, OPAQUE,  0,    0,  255,   0),
+    table       : null,
     scoreboard  : null,
     labels      : null,
     trump       : null,
@@ -2466,6 +2482,14 @@ var asset3 = new Promise(function (resolve, reject) {
 });
 var asset4 = new Promise(function (resolve, reject) {
     // Game.Controller.init();
+    let table_top = new Image();
+    table_top.id = "table_top";
+    table_top.src = `img/${table_top.id}.png`;
+    table_top.onload =  () => {
+        console.log(`Background image (game table) loaded.`);
+        Game.Background.table = table_top;
+        // Game.Components.game_table = table_top;
+    };
     resolve(`4`);
 });
 var asset5 = new Promise(function (resolve, reject) {
@@ -2518,6 +2542,15 @@ function loadCutScenes() {                  //  load array of video clips in mem
     videoSource.setAttribute("type", "video/mp4");
     Game.Components.cutScenes[0].appendChild(videoSource); 
 }
+ function loadTableImage() {
+    const table = new Image();
+    table.id = "table_top";
+    table.src = `img/table_top.png`;
+    table.onload =  () => {
+        console.log(`Background image (game table) loaded.`);
+        Game.Components.game_table = table;
+    };
+ }
 /*
 function loadScreenCache() {                    //  screen cache, used in debugging
     let screens = [];
@@ -2549,7 +2582,7 @@ function updateGameScreen() {
 */
 
 function displayBackground() {
-    Display.labels(Game.Player.human.hand).scoreboard(Game.Player);
+    Display.table(Game.Background.table).labels(Game.Player.human.hand).scoreboard(Game.Player);
     if (Game.Components.deck.getTrump()) {
         Display.trump(Game.Components.deck.getTrump());
     }
@@ -3007,5 +3040,5 @@ FrontEnd:
 
 
 /********************************************************************************************** */
-/*                 Copyright (c) 2018-2020 Gallatin Engineering Ltd, T&T. All Rights Reserved.  */
+/*                 Copyright (c) 2018-2025 Gallatin Engineering Ltd, T&T. All Rights Reserved.  */
 /********************************************************************************************** */
